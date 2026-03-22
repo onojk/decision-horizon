@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.decisionhorizon'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files(
+        'lib/desktop-1.0.jar',
+        'lib/BaseMod.jar',
+        'lib/ModTheSpire.jar',
+        'lib/StSLib.jar'
+    )
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 8
+}

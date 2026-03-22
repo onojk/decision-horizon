@@ -1,0 +1,10 @@
+{
+  "modid": "decisionhorizon",
+  "name": "Decision Horizon",
+  "author_list": ["onojk"],
+  "description": "Automatically pauses gameplay when meaningful strategic changes occur.",
+  "version": "0.1.0",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.6.3",
+  "dependencies": ["basemod"]
+}
